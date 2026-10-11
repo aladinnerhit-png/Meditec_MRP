@@ -90,24 +90,3 @@ elif selected_page == "📦 Stock Matière Première":
 else:
     st.subheader(selected_page)
     st.info("قيد التطوير.")
-    import sys
-from streamlit.web import cli as stcli
-
-if __name__ == '__main__':
-   
-    sys.exit(stcli.main())
-    import os
-import sys
-import webbrowser
-from streamlit.web import cli as stcli
-
-if __name__ == '__main__':
-    # تحديد المسار المباشر للفيشي داخل التطبيق
-    script_path = os.path.abspath(__file__)
-    
-    sys.argv = ["streamlit", "run", script_path, "--global.developmentMode=false"]
-    
-    # فتح المتصفح تلقائياً
-    webbrowser.open("http://localhost:8501")
-    
-    sys.exit(stcli.main())
